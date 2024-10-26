@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+
+... (several lines of code) ...
+
+</script>
+<meta name="google-site-verification" content="WmmE3kXxbSnBZ_UhakMt0I6gkrL7ND3gv5Y17hwWuMc" />
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./E7B7612D-A1E4-4A0B-B11F-8ABACA0612CA.png" type="./E7B7612D-A1E4-4A0B-B11F-8ABACA0612CA.png"> <!-- For older browsers -->
+    <title>KitHouse X SV Fellbach - 25/26 Official jerseys</title>
+    <meta name="google-site-verification" content="WmmE3kXxbSnBZ_UhakMt0I6gkrL7ND3gv5Y17hwWuMc" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    <meta name="google-site-verification" content="WmmE3kXxbSnBZ_UhakMt0I6gkrL7ND3gv5Y17hwWuMc" />
+    body {font-family: "Open Sans"}
+    </style>
+  </head>
+<body class="w3-light-grey">
+
+
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-red">
+    <h1 class="w3-xxxlarge"><b>KITHOUSE x SV FELLBACH</b></h1>
+    <h6>The new era of KitHouse & <span class="w3-tag">SV Fellbach</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="./Image.jpg" alt="KitHouse and SV Fellbach" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>COMING SOON</h3>
+          <h5>Home kit, <span class="w3-opacity">April 7, 2025</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./Image_11_.jpg" alt="KitHouse and SV Fellbach" style="width:100%" class="w3-padding-16">
+          <p><strong>SV Fellbach 25/26 Home kit.</strong> SV Fellbach is excited to unveil their new home kit for the 2024/25 season, proudly sponsored by KitHouse. The sleek and modern design reflects the club’s vibrant spirit and ambition, combining tradition with contemporary style. With KitHouse as their new partner, SV Fellbach is ready to take the field in striking fashion, representing both their local community and their growing aspirations. The new kit promises to be a fan favorite as the team embarks on another thrilling season.</p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>COMING SOON</h3>
+          <h5>Away kit, <span class="w3-opacity">April 7, 2025</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./Image_12_.jpg" alt="KitHouse and SV Fellbach" style="width:100%" class="w3-padding-16">
+          <p><strong>SV Fellbach 25/26 Away kit.</strong> SV Fellbach is thrilled to reveal their dynamic away kit for the 2024/25 season, proudly presented by KitHouse. This eye-catching design breaks away from convention, featuring bold colors and innovative patterns that embody the club’s adventurous spirit. As SV Fellbach takes on new challenges away from home, the fresh and striking away kit will stand out on every pitch, showcasing the exciting partnership with KitHouse and the team’s commitment to excellence. Gear up and join SV Fellbach on their journey to new victories!</p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large"> 
+        <div class="w3-center">
+          <h3>WHO ARE KITHOUSE?</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./WhatsApp_Image_2024-10-23_at_12.56.27.jpeg" alt="KitHouse and SV Fellbach" style="width:100%" class="w3-padding-16">
+          <p><strong>KitHouse,</strong> launched in 2022 between Finland and the United Kingdom, is an online shop dedicated to selling authentic football jerseys from top brands like Adidas, Nike, and Puma. While they don’t manufacture their own jerseys, KitHouse prides itself on offering a curated selection of high-quality kits from popular clubs and national teams around the world. With a growing fan base of over 19,000 followers across all platforms, KitHouse is becoming a trusted destination for football enthusiasts seeking the latest and most iconic jerseys.</p>
+          <p class="w3-clear"></p>
+          
+
+     
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_mountain.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/boy.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://www.w3schools.com/w3images/girl_hood.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="https://www.stuttgarter-nachrichten.de/media.media.88cdd57b-1517-4892-8a91-e21ce655913d.original1920.jpg" alt="KitHouse and SV Fellbach" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-red">
+          <h4>Who are SV Fellbach?</h4>
+          <p>SV Fellbach is a passionate and competitive football club based in Fellbach, Germany. Known for their strong community ties and exciting gameplay, the club competes in regional leagues with a focus on developing local talent and engaging fans. Their home games are played at the Stadion an der Mörikestraße, where the team’s vibrant spirit and commitment to the sport shine through in every match.</p>
+        </div>
+      </div>
+      <hr>
+
+    
+
+
+
+    
+
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-red">
+    <h4>Follow KitHouse</h4>
+  </div>
+  <div class="w3-container w3-xlarge w3-padding" style="display: flex; align-items: center;">
+    <a href="https://www.instagram.com/kithouseofficial" target="_blank" style="display: flex; align-items: center; text-decoration: none;"> <!-- Added text-decoration: none; -->
+      <i class="fa fa-instagram w3-hover-opacity" style="margin-right: 10px;"></i>
+      <span style="margin-right: 10px; font-size: 14px;">KitHouse</span>
+    </a>
+  </div>
+</div>
+<hr>
+
+
+
+
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-red">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest updates.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-red" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+ <p class="w3-small">KitHouse x SV Fellbach. All rights reserved.</p>
+ <!-- End footer. -->
+ </footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+
+</body>
+</html>
