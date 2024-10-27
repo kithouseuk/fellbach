@@ -119,6 +119,106 @@ and is wrapped around the whole page content, except for the footer in this exam
           <img src="BEA9E499-246B-4B82-B0EF-F81CCBD6E393.jpeg" alt="KitHouse and SV Fellbach" style="width:100%" class="w3-padding-16">
           <p><strong>KitHouse,</strong> launched in 2022 between Finland and the United Kingdom, is an online shop dedicated to selling authentic football jerseys from top brands like Adidas, Nike, and Puma. While they don’t manufacture their own jerseys, KitHouse prides itself on offering a curated selection of high-quality kits from popular clubs and national teams around the world. With a growing fan base of over 19,000 followers across all platforms, KitHouse is becoming a trusted destination for football enthusiasts seeking the latest and most iconic jerseys.</p>
           <p class="w3-clear"></p>
+
+              <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product" id="product1">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Price: $19.99</p>
+            <div class="buttons">
+                <button id="apple-pay-product1">Pay with Apple Pay</button>
+                <button id="card-pay-product1">Pay with Credit Card</button>
+                <div id="card-element1" style="display: none;"></div>
+                <button id="submit-button1" style="display: none;">Submit Payment</button>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product" id="product2">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $29.99</p>
+            <div class="buttons">
+                <button id="apple-pay-product2">Pay with Apple Pay</button>
+                <button id="card-pay-product2">Pay with Credit Card</button>
+                <div id="card-element2" style="display: none;"></div>
+                <button id="submit-button2" style="display: none;">Submit Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const stripe = Stripe('YOUR_PUBLISHABLE_KEY'); // Replace with your Stripe publishable key
+        const elements = stripe.elements();
+
+        // Helper function for payment setup
+        function setupApplePay(productPrice, productId) {
+            const paymentRequest = stripe.paymentRequest({
+                country: 'US',
+                currency: 'usd',
+                total: {
+                    label: `Product ${productId}`,
+                    amount: productPrice, // Price in cents
+                },
+                requestPayerName: true,
+                requestPayerEmail: true,
+            });
+
+            const prButton = elements.create('paymentRequestButton', {
+                paymentRequest,
+            });
+
+            paymentRequest.canMakePayment().then(function (result) {
+                if (result) {
+                    prButton.mount(`#apple-pay-product${productId}`);
+                } else {
+                    document.getElementById(`apple-pay-product${productId}`).style.display = 'none';
+                }
+            });
+        }
+
+        // Product 1 setup
+        setupApplePay(1999, 1); // 1999 cents = $19.99
+        const cardElement1 = elements.create('card');
+        document.getElementById("card-pay-product1").addEventListener('click', function () {
+            document.getElementById("card-element1").style.display = 'block';
+            document.getElementById("submit-button1").style.display = 'block';
+            cardElement1.mount('#card-element1');
+        });
+        document.getElementById("submit-button1").addEventListener('click', async () => {
+            const {paymentMethod, error} = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement1,
+            });
+
+            if (error) {
+                alert(error.message);
+            } else {
+                alert('Product 1 payment successful!');
+            }
+        });
+
+        // Product 2 setup
+        setupApplePay(2999, 2); // 2999 cents = $29.99
+        const cardElement2 = elements.create('card');
+        document.getElementById("card-pay-product2").addEventListener('click', function () {
+            document.getElementById("card-element2").style.display = 'block';
+            document.getElementById("submit-button2").style.display = 'block';
+            cardElement2.mount('#card-element2');
+        });
+        document.getElementById("submit-button2").addEventListener('click', async () => {
+            const {paymentMethod, error} = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement2,
+            });
+
+            if (error) {
+                alert(error.message);
+            } else {
+                alert('Product 2 payment successful!');
+            }
+        });
           
 
      
