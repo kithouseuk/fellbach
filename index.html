@@ -148,77 +148,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
     </div>
 
-    <script>
-        const stripe = Stripe('YOUR_PUBLISHABLE_KEY'); // Replace with your Stripe publishable key
-        const elements = stripe.elements();
-
-        // Helper function for payment setup
-        function setupApplePay(productPrice, productId) {
-            const paymentRequest = stripe.paymentRequest({
-                country: 'US',
-                currency: 'usd',
-                total: {
-                    label: `Product ${productId}`,
-                    amount: productPrice, // Price in cents
-                },
-                requestPayerName: true,
-                requestPayerEmail: true,
-            });
-
-            const prButton = elements.create('paymentRequestButton', {
-                paymentRequest,
-            });
-
-            paymentRequest.canMakePayment().then(function (result) {
-                if (result) {
-                    prButton.mount(`#apple-pay-product${productId}`);
-                } else {
-                    document.getElementById(`apple-pay-product${productId}`).style.display = 'none';
-                }
-            });
-        }
-
-        // Product 1 setup
-        setupApplePay(1999, 1); // 1999 cents = $19.99
-        const cardElement1 = elements.create('card');
-        document.getElementById("card-pay-product1").addEventListener('click', function () {
-            document.getElementById("card-element1").style.display = 'block';
-            document.getElementById("submit-button1").style.display = 'block';
-            cardElement1.mount('#card-element1');
-        });
-        document.getElementById("submit-button1").addEventListener('click', async () => {
-            const {paymentMethod, error} = await stripe.createPaymentMethod({
-                type: 'card',
-                card: cardElement1,
-            });
-
-            if (error) {
-                alert(error.message);
-            } else {
-                alert('Product 1 payment successful!');
-            }
-        });
-
-        // Product 2 setup
-        setupApplePay(2999, 2); // 2999 cents = $29.99
-        const cardElement2 = elements.create('card');
-        document.getElementById("card-pay-product2").addEventListener('click', function () {
-            document.getElementById("card-element2").style.display = 'block';
-            document.getElementById("submit-button2").style.display = 'block';
-            cardElement2.mount('#card-element2');
-        });
-        document.getElementById("submit-button2").addEventListener('click', async () => {
-            const {paymentMethod, error} = await stripe.createPaymentMethod({
-                type: 'card',
-                card: cardElement2,
-            });
-
-            if (error) {
-                alert(error.message);
-            } else {
-                alert('Product 2 payment successful!');
-            }
-        });
           
 
      
@@ -346,7 +275,76 @@ function myFunction(id) {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+        const stripe = Stripe('YOUR_PUBLISHABLE_KEY'); // Replace with your Stripe publishable key
+        const elements = stripe.elements();
 
+        // Helper function for payment setup
+        function setupApplePay(productPrice, productId) {
+            const paymentRequest = stripe.paymentRequest({
+                country: 'US',
+                currency: 'usd',
+                total: {
+                    label: `Product ${productId}`,
+                    amount: productPrice, // Price in cents
+                },
+                requestPayerName: true,
+                requestPayerEmail: true,
+            });
+
+            const prButton = elements.create('paymentRequestButton', {
+                paymentRequest,
+            });
+
+            paymentRequest.canMakePayment().then(function (result) {
+                if (result) {
+                    prButton.mount(`#apple-pay-product${productId}`);
+                } else {
+                    document.getElementById(`apple-pay-product${productId}`).style.display = 'none';
+                }
+            });
+        }
+
+        // Product 1 setup
+        setupApplePay(1999, 1); // 1999 cents = $19.99
+        const cardElement1 = elements.create('card');
+        document.getElementById("card-pay-product1").addEventListener('click', function () {
+            document.getElementById("card-element1").style.display = 'block';
+            document.getElementById("submit-button1").style.display = 'block';
+            cardElement1.mount('#card-element1');
+        });
+        document.getElementById("submit-button1").addEventListener('click', async () => {
+            const {paymentMethod, error} = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement1,
+            });
+
+            if (error) {
+                alert(error.message);
+            } else {
+                alert('Product 1 payment successful!');
+            }
+        });
+
+        // Product 2 setup
+        setupApplePay(2999, 2); // 2999 cents = $29.99
+        const cardElement2 = elements.create('card');
+        document.getElementById("card-pay-product2").addEventListener('click', function () {
+            document.getElementById("card-element2").style.display = 'block';
+            document.getElementById("submit-button2").style.display = 'block';
+            cardElement2.mount('#card-element2');
+        });
+        document.getElementById("submit-button2").addEventListener('click', async () => {
+            const {paymentMethod, error} = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement2,
+            });
+
+            if (error) {
+                alert(error.message);
+            } else {
+                alert('Product 2 payment successful!');
+            }
+        });
 
 
 </body>
